@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(30, 29, 29);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;  
+}
+.searchbar {
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+}
+.heading {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+    cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: block; 
+  appearance: block;
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+  cursor: pointer;
+}

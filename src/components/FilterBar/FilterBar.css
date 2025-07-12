@@ -1,0 +1,177 @@
+.filter-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white; 
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.filter-controls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.filter-options{
+    margin: 20px;
+}
+.filter-label{
+    margin-right: 10px;
+}
+.filter-select{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+}
+.show-items{
+    margin: 20px;
+}
+.show-label{
+    margin-right: 10px;
+}
+.show-select{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    outline: none;
+    cursor: pointer;
+}
+.add-employee-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50; 
+    color: white;            
+    border: none;
+    cursor: pointer;
+}
+.add-employee-button:hover {
+    background-color: #45a049; 
+}
+.filter-popup-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: background 0.3s;
+}
+
+.filter-popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 350px;
+    background: #fff;
+    box-shadow: -2px 0 16px rgba(0,0,0,0.15);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px 0 0 8px;
+    transform: translateX(100%);
+    animation: slideInSidebar 0.3s forwards;
+}
+
+@keyframes slideInSidebar {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+.filter-popup label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.filter-popup input {
+    margin-top: 4px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.filter-popup-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.filter-popup-actions button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: black;
+}.filter-popup-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+.filter-popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: auto;
+    min-height: 300px;
+    width: 350px;
+    background: #fff;
+    box-shadow: -2px 0 16px rgba(0,0,0,0.15);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px 0 0 8px;
+    animation: slideInSidebar 0.3s forwards;
+}
+@keyframes slideInSidebar {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+.filter-popup label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.filter-popup input, .filter-popup select {
+    margin-top: 4px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.filter-popup-actions {
+    display: flex;
+    gap: 10px;
+    justify-content:flex-end;
+}
+
+.add-form-button {
+    background-color: #90caf9;   
+    color: #1976d2;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+.add-form-button:hover {
+    background-color: #1976d2;  
+    color: #fff;
+}
+.filter-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: white;
+    border: none;
+    cursor: pointer;
+    color: black;   
+    border: 1px solid #ccc ;
+}
+.filter-button:hover {
+    background-color: #b2b2b2; 
+    color: black;            
+}

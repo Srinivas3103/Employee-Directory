@@ -1,0 +1,12 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(30, 29, 29);
+}
+p {
+    color: white;
+    margin-left: 20px;
+    font-size: 15px;
+}
